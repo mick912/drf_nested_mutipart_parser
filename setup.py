@@ -15,6 +15,7 @@ setup(
     include_package_data=True,
     description='Parser for nested params in multipart file upload',
     long_description=README,
+    long_description_content_type="text/markdown",
     url='https://github.com/mick912/drf_nested_mutipart_parser.git',
     author='Mirjan Asymbaev',
     author_email='mirjan.asymbaev@gmail.com',

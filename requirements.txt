@@ -5,6 +5,6 @@ py
 pytest
 
 setuptools
-twine==1.8.1
-wcwidth==0.1.7
+twine
+wcwidth
 wheel
