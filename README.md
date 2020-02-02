@@ -1,6 +1,5 @@
 # drf-nested-multipart-parser
-Parser for nested params in multipart file upload
-
+DRF Parser for nested params in multipart file upload. 
 
 # Usage
 ```python
@@ -19,6 +18,39 @@ from rest_framework import viewsets
 
 class YourViewSet(viewsets.ViewSet):
 	parser_classes = (JSONParser, NestedMultipartParser)
+```
+
+# Example:
+Input data
+```
+user[email] = 'test@test.test'
+user[name] = 'John Doe'
+
+user[profile][balance] = 100.00
+user[profile][phone_number] = '+996325698201'
+user[profile][avatar] = avatar_file
+
+user[roles][] = 1 
+user[roles][] = 2 
+user[roles][] = 3 
+...
+```
+
+View
+```python
+from drf_nested_multipart_parser import NestedMultipartParser
+from rest_framework import viewsets
+
+class YourViewSet(viewsets.ViewSet):
+	parser_classes = (NestedMultipartParser,)
+
+    def post(self, request):
+       user_data = request.data.get('user')
+       
+       email = user_data['email']  
+       balance = user_data['profile']['balance']
+       roles = user_data['roles']
+       ...   
 ```
 
 # Installation
