@@ -4,6 +4,7 @@ djangorestframework<4
 py
 pytest
 
+setuptools
 twine==1.8.1
 wcwidth==0.1.7
 wheel

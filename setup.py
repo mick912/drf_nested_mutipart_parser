@@ -8,7 +8,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md'), 'r') as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='drf-field-multipart-parser',
+    name='drf-nested-multipart-parser',
     version='0.0.1',
     license='MIT',
     packages=['drf_nested_multipart_parser'],
