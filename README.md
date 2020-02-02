@@ -47,9 +47,9 @@ class YourViewSet(viewsets.ViewSet):
     def post(self, request):
        user_data = request.data.get('user')
        
-       email = user_data['email']  
-       balance = user_data['profile']['balance']
-       roles = user_data['roles']
+       email = user_data['email']  # test@test.test
+       balance = user_data['profile']['balance'] # 100.0
+       roles = user_data['roles'] # [1, 2, 3]
        ...   
 ```
 
