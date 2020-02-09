@@ -20,9 +20,8 @@ setup(
     author='Mirjan Asymbaev',
     author_email='mirjan.asymbaev@gmail.com',
     classifiers=[
-        'Environment :: Web Environment/API',
+        'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django REST Framework',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
