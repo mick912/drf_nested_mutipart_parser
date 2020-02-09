@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='drf-nested-multipart-parser',
-    version='0.0.1',
+    version='0.0.2',
     license='MIT',
     packages=['drf_nested_multipart_parser'],
     include_package_data=True,
@@ -20,8 +20,9 @@ setup(
     author='Mirjan Asymbaev',
     author_email='mirjan.asymbaev@gmail.com',
     classifiers=[
-        'Environment :: Web Environment',
+        'Environment :: Web Environment/API',
         'Framework :: Django',
+        'Framework :: Django REST Framework',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',

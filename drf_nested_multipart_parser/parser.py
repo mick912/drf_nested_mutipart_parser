@@ -33,4 +33,7 @@ class NestedMultipartParser(parsers.MultiPartParser):
         for key, value in result.data.items():
             self.decode(key=key, value=value, data=data)
 
-        return parsers.DataAndFiles(data, result.files)
+        for key, value in result.files.items():
+            self.decode(key=key, value=value, data=data)
+
+        return data
